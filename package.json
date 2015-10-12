@@ -1,0 +1,24 @@
+{
+  "name": "gulp-concat-to-json",
+  "version": "1.0.0",
+  "description": "concat files and convert the content to JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peichao01/gulp-concat-to-json.git"
+  },
+  "keywords": [
+    "gulp",
+    "concat",
+    "json"
+  ],
+  "author": "peichao <pei.chao@qq.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peichao01/gulp-concat-to-json/issues"
+  },
+  "homepage": "https://github.com/peichao01/gulp-concat-to-json#readme"
+}
