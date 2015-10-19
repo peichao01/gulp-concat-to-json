@@ -1,5 +1,6 @@
 var through = require('through2')
 var path = require('path')
+var isSepBackSlant = path.sep === '\\'
 
 function Concat() {
     this.content = {}
@@ -8,6 +9,11 @@ function Concat() {
 Object.defineProperties(Concat.prototype, {
     add:    {
         value: function (fileKey, fileContent) {
+			if(isSepBackSlant){
+				// change to the linux path mode
+				// windows: \\a\\b\\c.html => /a/b/c.html
+				fileKey = fileKey.replace(/\\/g, '/')
+			}
             this.content[fileKey] = fileContent
         }
     },

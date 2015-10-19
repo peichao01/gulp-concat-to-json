@@ -1,6 +1,6 @@
 {
   "name": "gulp-concat-to-json",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "concat files and convert the content to JSON",
   "main": "index.js",
   "scripts": {
