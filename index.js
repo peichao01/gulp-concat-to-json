@@ -45,6 +45,11 @@ function concatToJson(baseUri, destPath) {
     }
 
     function endStream(cb) {
+		// no files passed in, no file goes out
+		if (!lastFile) {
+			cb();
+			return;
+		}
 
         var joinedFile      = lastFile.clone({contents: false})
         joinedFile.path     = destPath
